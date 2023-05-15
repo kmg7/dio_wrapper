@@ -11,6 +11,6 @@ enum HttpMethod {
 
 extension HttpMethodExtension on HttpMethod {
   String get value {
-    return toString().toUpperCase();
+    return toString().split('.').last.toUpperCase();
   }
 }
